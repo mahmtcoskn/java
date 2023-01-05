@@ -35,7 +35,7 @@ public class C09_Varargs {
         int geriyeKalanlarToplami=0;
     }
 
-     // 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
+     */
 
 
 }
