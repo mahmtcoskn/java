@@ -1,6 +1,6 @@
 package day27_overriding;
 
-public class BKuslar {
+public class BKuslar extends AHayvanlar{
 
     protected void kanat( ) {
         System.out.println("kanatlidirlar");
