@@ -10,6 +10,6 @@ public class C08_SubeListesiOlusturma {
 
         Map<Integer,String> ogrenciMap = MapMethodDepo.ogrenciMapOlustur();
 
-        MapMethodDepo.sinifListesiYazdirma(ogrenciMap,"11","k");
+        MapMethodDepo.subeListesiYazdirma(ogrenciMap,"11","k");
     }
 }
