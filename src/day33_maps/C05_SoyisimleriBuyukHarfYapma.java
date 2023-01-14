@@ -20,5 +20,7 @@ public class C05_SoyisimleriBuyukHarfYapma {
 
         MapMethodDepo.sinifListesiYazdirma(ogrenciMap,"11");
 
+
+
     }
 }

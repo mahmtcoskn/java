@@ -197,10 +197,10 @@ public class MapMethodDepo {
             // map i update etmeliyiz
 
             // 7- setValue() kullanarak value yu yeni haline update edelim
-            eachEntry.setValue(entryValueArr[0] + " - " +
-                               entryValueArr[1] + " - " +
-                               entryValueArr[2] + " - " +
-                               entryValueArr[3] + " - " +
+            eachEntry.setValue(entryValueArr[0] +"-"+
+                               entryValueArr[1] +"-"+
+                               entryValueArr[2] +"-"+
+                               entryValueArr[3] +"-"+
                                entryValueArr[4]);
 
 
