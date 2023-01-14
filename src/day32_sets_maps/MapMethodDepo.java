@@ -158,7 +158,7 @@ public class MapMethodDepo {
 
         for (Map.Entry<Integer,String> eachEntry:entrySeti
              ) {
-            String entryValue = eachEntry.getValue();
+            String entryValue = eachEntry.getValue();  // Ali-Can-11-H-MF
 
             String [] entryValueArr = entryValue.split("-");  // [Ali, Can, 11, H, MF]
 
@@ -169,6 +169,55 @@ public class MapMethodDepo {
                                    entryValueArr[1] + " " +
                                    entryValueArr[2]);
             }
+        }
+    }
+
+    public static Map<Integer, String> soyisimleriBuyukHarfYap(Map<Integer, String> ogrenciMap) {
+
+        // Map daki soyisimleri buyuk harfe ceviren bir method olusturun
+
+        // 1- entrySet olusturalim
+
+        Set<Map.Entry<Integer,String>> entrySeti = ogrenciMap.entrySet();
+
+        // 2- foreach loop ile her bir entry i elden gecirip, soyisimleri buyuk harf yapalim
+
+        for (Map.Entry<Integer,String> eachEntry : entrySeti){
+
+            // 3- entry den value yu alalim
+            String entryValue = eachEntry.getValue();  // Ali-Can-11-H-MF
+
+            // 4- soyisim bilgisine ulasip degistirebilmek icin parcala
+            String [] entryValueArr = entryValue.split("-");  // [Ali, Can, 11, H, MF]
+
+            // 5- soyismi buyuk harf yapalim
+            entryValueArr[1]= entryValueArr[1].toUpperCase();  // [ALİ, CAN, 11, H, MF]
+
+            // 6- degisikligi yaptiktan sonra yeniden birlestirmeleri yapip
+            // map i update etmeliyiz
+
+            // 7- setValue() kullanarak value yu yeni haline update edelim
+            eachEntry.setValue(entryValueArr[0] + " - " +
+                               entryValueArr[1] + " - " +
+                               entryValueArr[2] + " - " +
+                               entryValueArr[3] + " - " +
+                               entryValueArr[4]);
+
+
+        }
+        return ogrenciMap;
+    }
+
+    public static void tumListeyiYazdir(Map<Integer, String> ogrenciMap) {
+
+        Set<Map.Entry<Integer,String>> ogrenciEntrySet = ogrenciMap.entrySet();
+
+        System.out.println("No   Ogrenci Bilgileri");
+        System.out.println("======================");
+
+        for (Map.Entry<Integer,String> eachEntry: ogrenciEntrySet
+        ) {
+            System.out.println(eachEntry);
         }
     }
 }

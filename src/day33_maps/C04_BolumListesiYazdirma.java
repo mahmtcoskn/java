@@ -4,7 +4,7 @@ import day32_sets_maps.MapMethodDepo;
 
 import java.util.Map;
 
-public class BolumListesiYazdirma {
+public class C04_BolumListesiYazdirma {
 
     public static void main(String[] args) {
 
