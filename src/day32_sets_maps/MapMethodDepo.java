@@ -280,10 +280,21 @@ public class MapMethodDepo {
 
             siraliOgrenciSeti.add(istenenFormattakiBilgi);
         }
-        System.out.println("sinif sube isim soyisim no");
-        System.out.println("==========================");
+        System.out.println("sinif sube isim  soyisim  no");
+        System.out.println("=============================");
         for (String each : siraliOgrenciSeti) {
-            System.out.println(each);
+            // System.out.println(each);
+
+            String[] duzenliYazdirArr = each.split(" ");
+
+            String sinif = duzenliYazdirArr[0];
+            String sube = duzenliYazdirArr[1];
+            String isim = duzenliYazdirArr[2];
+            String soyisim = duzenliYazdirArr[3];
+            String no = duzenliYazdirArr[4];
+
+            System.out.printf(" %1s    %1s   %-5s   %-4s   %s%n" ,sinif,sube,isim,soyisim,no);
+            // s leri büyük yazarsak string manipulation a gerek kalmadan buyuk harfle yazdirabiliriz
         }
 
     }
